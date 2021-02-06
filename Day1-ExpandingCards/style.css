@@ -1,0 +1,60 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+*{
+  box-sizing: border-box;
+}
+body{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  overflow: hidden;
+  font-family: 'Roboto' , sans-serif;
+}
+
+.container{
+  width: 90vw;
+  display: flex;
+  height: 90vh;;
+}
+.panel-1{
+  background-image: url(https://source.unsplash.com/1600x900/?nature);
+}
+.panel-2{
+  background-image: url(https://source.unsplash.com/1600x900/?water);
+}
+.panel-3{
+  background-image: url(https://source.unsplash.com/1600x900/?mountains);
+}
+.panel-4{
+  background-image: url(https://source.unsplash.com/1600x900/?trees);
+}
+.panel-5{
+  background-image: url(https://source.unsplash.com/1600x900/?houses);
+}
+
+.panel{
+  background-size: cover;
+  background-position: auto 100% ;
+  flex: 0.5;
+  margin: 10px;
+  border-radius: 75px;
+  cursor: pointer;
+  position: relative;
+  transition: flex 0.7s ease-in;
+}
+
+.panel h3{
+  font-size: 24px;
+  color: white;
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+  opacity: 0;
+  transition: opacity 0.3s ease-in 0.4s;
+}
+.panel.active{
+  flex:5;
+}
+.panel.active h3{
+  opacity: 1;
+}
