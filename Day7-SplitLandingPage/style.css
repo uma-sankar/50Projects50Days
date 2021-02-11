@@ -1,0 +1,116 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;500&display=swap');
+*{
+  box-sizing: border-box;
+}
+body{
+  margin: 0;
+  padding: 0;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  font-family: 'Ubuntu', sans-serif;
+}
+.container{
+  background-color: #333;
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+.split{
+  height: 100%;
+  width: 50%;
+  position: absolute;
+  
+  
+}
+.split.left{
+  background-image: url(images/ps5.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  left: 0;
+}
+.split.left::before{
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(7, 8, 97, 0.6);
+}
+.split.right::before{
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(4, 39, 22, 0.7);
+}
+.split.right{
+  background-image: url(images/xbox.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: left 20%;
+  right: 0;
+}
+h1{
+  font-size: 3rem;
+  position: absolute;
+  color: white;
+  left: 50%;
+  top: 30%;
+  transform: translateX(-50%);
+  margin: 5px;
+  white-space: nowrap;
+}
+.btn{
+  text-decoration: none;
+  color: white;
+  font-size: 1.7rem;
+  position: absolute;
+  left: 50%;
+  top: 45%;
+  transform: translateX(-50%);
+  border: 3px solid white;
+  width: 170px;
+  text-align: center;
+  padding: 5px;
+  margin: 10px;
+  transition: background-color 0.4s ease-in-out;
+}
+.btn:focus{
+  outline: none;
+}
+.split.left .btn:hover{
+  background-color: rgb(94, 160, 180);
+}
+.split.right .btn:hover{
+  background-color: rgba(0,255,0,0.3)
+}
+.container.hover-left .left{
+  width: 75%;
+}
+.container.hover-left .right{
+  width: 25%;
+}
+.container.hover-right .left{
+  width: 25%;
+}
+.container.hover-right .right{
+  width: 75%;
+}
+.split.right, .split.left ,
+.split.right::before,
+.split.left::before{
+  transition: width 0.7s ease;
+}
+
+@media(max-width:768px){
+  h1{
+    font-size: 1.5rem;
+    
+  }
+  .btn{
+    font-size: 1rem;
+    width: 100px;
+    top: 40%;
+  }
+}
