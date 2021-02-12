@@ -1,0 +1,88 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu+Condensed&display=swap');
+
+*{
+  box-sizing: border-box;
+}
+body{
+  margin: 0;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  overflow: hidden;
+  background-color: steelblue;
+  font-family: 'Ubuntu Condensed', sans-serif;
+}
+.container{
+  background-color: rgba(0,0,0,0.5);
+  padding: 25px;
+  color: white;
+  border-radius: 5px;
+}
+.container h1{
+  text-align: center;
+
+}
+.form-control {
+  width: 300px;
+  margin: 20px 0px 40px;
+  position: relative;
+}
+.form-control input{
+  background-color: transparent;
+  border: none;
+  border-bottom: 3px solid white;
+  width: 100%;
+  padding: 15px 0;
+  font-size: 1.2rem;
+  color: white;
+  font-family: inherit;
+}
+.form-control input:focus,
+.form-control input:valid{
+  outline: none;
+  border-bottom-color: lightblue;
+}
+.form-control label{
+  position: absolute;
+  top: 15px;
+  left: 0;
+  font-size: 1.2rem;
+}
+.form-control label span{
+  display: inline-block;
+  font-size: 1.2rem;
+  min-width: 5px;
+  transition: transform 0.2s ease-in-out;
+}
+.form-control input:focus + label span
+{
+   color: lightblue;
+   transform: translateY(-30px);
+}
+.btn{
+  width: 100%;
+  background-color: steelblue;
+  height: 40px;
+  border: none;
+  color: white;
+  font-size: 1.2rem;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: transform 0.1s ease-in-out;
+  font-family: inherit;
+}
+.btn:focus{
+   outline: none;
+}
+.btn:active{
+  transform: scale(0.98) ;
+}
+.container p{
+  text-align: center;
+}
+.container p a{
+  text-decoration: none;
+  color: lightblue;
+}
