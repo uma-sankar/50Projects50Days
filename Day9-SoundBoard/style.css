@@ -1,0 +1,37 @@
+*{
+  box-sizing: border-box;
+}
+body{
+  margin: 0;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  flex-direction: column;
+  background-color: purple;
+}
+h1{
+  color: lightblue;
+  font-size: 2.5rem;
+}
+.button-container{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+.btn{
+   background-color: lightblue;
+   width: 100px;
+   height: 50px;
+   color: black;
+   font-size: 1rem;
+   border-radius: 5px;
+   margin: 20px;
+   font-weight: bold;
+   cursor: pointer;
+}
+.btn:focus{
+  outline: none;
+}
