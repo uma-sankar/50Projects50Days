@@ -1,0 +1,67 @@
+* {
+  -webkit-box-sizing: "border-box";
+          box-sizing: "border-box";
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+body .ripple {
+  background-color: purple;
+  color: white;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-size: 1rem;
+  border: 2px solid purple;
+  padding: 20px 30px;
+  margin: 10px 0;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+}
+
+body .ripple:focus {
+  outline: none;
+}
+
+body .ripple .circle {
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  background-color: white;
+  border-radius: 50%;
+  -webkit-transform: translate(-50%, -50%) scale(0);
+          transform: translate(-50%, -50%) scale(0);
+  -webkit-animation: scale 0.5s ease-in-out;
+          animation: scale 0.5s ease-in-out;
+}
+
+@-webkit-keyframes scale {
+  to {
+    -webkit-transform: translate(-50%, -50%) scale(3);
+            transform: translate(-50%, -50%) scale(3);
+    opacity: 0;
+  }
+}
+
+@keyframes scale {
+  to {
+    -webkit-transform: translate(-50%, -50%) scale(3);
+            transform: translate(-50%, -50%) scale(3);
+    opacity: 0;
+  }
+}
+/*# sourceMappingURL=style.css.map */
