@@ -1,0 +1,121 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&display=swap");
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: "Open Sans", sans-serif;
+}
+
+.container {
+  width: 1200px;
+  margin: 0 auto;
+}
+.nav{
+  position: fixed;
+  top: 0;
+  left: 0;
+  color: white;
+  width: 100%;
+  background-color: #222;
+  transition: all 0.3s ease-in;
+  
+}
+.nav .container{
+  height: 9vh;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  /* padding: 20px 0px; */
+}
+.nav h1{
+  font-size: 1.2rem;
+  color: balck;
+}
+ul{
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  width: 50%;
+  align-items: center;
+  justify-content: space-around;
+  transition: all 0.3s ease-in;
+}
+li a{
+  color: white;
+  cursor: pointer;
+  text-decoration: none;
+  font-size: 1rem;
+  transition: all 0.3s ease-in;
+  font-weight: bold;
+}
+li a:hover, li a.current{
+  color: rgba(255, 0, 0, 0.8);
+}
+.nav.active{
+  background-color: white;
+  color: black;
+  height: 7vh;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.nav.active a{
+  color: black;
+}
+.nav.active a:hover{
+  opacity: 0.8;
+}
+
+.hero {
+  background-image: url(https://www.outboxonline.com/wordpress2/wp-content/uploads/2013/01/design-1200x565.jpg);
+  height: 100vh;
+  width: 100vw;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: white;
+  position: relative;
+  z-index: -2;
+  margin-bottom: 30px;
+}
+.hero::before{
+  content: "";
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: rgba(0,0,0,0.6);
+  z-index: -1;
+}
+.hero h1{
+  font-size: 48px;
+  letter-spacing: 2px;
+  margin: 20px;
+}
+.hero p{
+font-size: 1.3rem;
+}
+
+.content{
+  margin: 20px 10px;
+  text-align: justify;
+}
+.content h1{
+  margin: 10px 0px;
+  font-size: 2rem;
+  letter-spacing: 2px;
+}
+.content p{
+  margin: 10px 0px;
+  font-size: 1.2rem;
+  letter-spacing: 2px;
+  line-height: 1.5;
+}
