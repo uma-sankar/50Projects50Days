@@ -1,0 +1,109 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;600&display=swap");
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Open Sans", sans-serif;
+  overflow: hidden;
+}
+.vertical-slider {
+  height: 100vh;
+  width: 100vw;
+  position: relative;
+  /* display: flex; */
+}
+.left-slider {
+  height: 100vh;
+  width: 35%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  transition: transform 0.3s ease-in-out;
+}
+.left-slider .content {
+  display: flex;
+  height: 100%;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.content h1 {
+  margin: 5px;
+}
+.content p {
+  margin: 5px;
+  font-weight: 600;
+}
+.div-1 {
+  background-color: lightgrey;
+}
+.div-2 {
+  background-color: white;
+}
+.div-3 {
+  background-color: slateblue;
+}
+.div-4 {
+  background-color: lightskyblue;
+}
+.right-slider {
+  height: 100vh;
+  width: 65%;
+  position: absolute;
+  top: 0;
+  left: 35%;
+  transition: transform 0.3s ease-in-out;
+}
+.img1 {
+  background-image: url(https://images.pexels.com/photos/3293148/pexels-photo-3293148.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500);
+}
+.img2 {
+  background-image: url(https://images.pexels.com/photos/869258/pexels-photo-869258.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500);
+}
+.img3 {
+  background-image: url(https://images.pexels.com/photos/374870/pexels-photo-374870.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500);
+}
+.img4 {
+  background-image: url(https://images.pexels.com/photos/937481/pexels-photo-937481.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500);
+}
+.img1,
+.img2,
+.img3,
+.img4 {
+  height: 100vh;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.button {
+  color: slategray;
+  padding: 15px;
+  font-size: 1.2rem;
+  border: none;
+  position: absolute;
+  top: 50%;
+  left: 35%;
+  cursor: pointer;
+}
+.button:hover {
+  color: white;
+  background-color: #00685c;
+}
+.down {
+  top: 57%;
+  transform: translateX(-100%);
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+}
+.up {
+  top: 50%;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+  margin-top: -2.5px;
+}
