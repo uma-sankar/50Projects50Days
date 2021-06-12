@@ -1,0 +1,114 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;400&display=swap");
+
+* {
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+  display: flex;
+  height: 100vh;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  background-color: #008c8c;
+  flex-direction: column;
+}
+.user-form {
+  width: 100%;
+  max-width: 700px;
+  margin-bottom: 2rem;
+}
+.user-form input {
+  font-family: inherit;
+  padding: 1rem 2rem;
+  width: 600px;
+  background-color: #0dbebe;
+  border: none;
+  border-radius: 10px;
+  font-size: 1rem;
+  display: block;
+  margin: auto;
+  box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.3),
+    0px -10px 15px rgba(0, 0, 0, 0.2);
+}
+.user-form input::placeholder {
+  color: black;
+}
+.user-form input:focus {
+  outline: none;
+}
+.card {
+  display: flex;
+  width: 100%;
+  max-width: 800px;
+  background-color: #0dbebe;
+  padding: 1rem 2rem;
+  align-items: center;
+  justify-content: center;
+  font-family: inherit;
+  border-radius: 10px;
+  box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.3),
+    0px -10px 15px rgba(0, 0, 0, 0.2);
+}
+img {
+  border-radius: 50%;
+  height: 200px;
+  width: 200px;
+  border: 10px solid #008c8c;
+}
+.user-info {
+  margin-left: 1rem;
+}
+.user-info h2 {
+  margin: 0;
+  font-size: 1.5rem;
+}
+.user-info ul {
+  list-style-type: none;
+  display: flex;
+  width: 400px;
+  align-items: center;
+  justify-content: space-between;
+  margin: 10px 0px;
+  padding: 0;
+}
+.user-info ul li {
+  padding: 0;
+  margin: 0;
+}
+a {
+  text-decoration: none;
+  color: black;
+  cursor: pointer;
+  background-color: #008c8c;
+  padding: 0.25rem 0.5rem;
+  border-radius: 5px;
+  margin-right: 10px;
+  margin-bottom: 10px;
+  display: inline-block;
+}
+strong{
+  margin-left: 10px;
+}
+
+@media (max-width: 500px) {
+  .user-form {
+    max-width: 400px;
+  }
+  .user-form input{
+    width: 80%;
+  }
+  .card {
+    flex-direction: column;
+    width: 90%;
+    margin: auto;
+  }
+  .user-info h2 {
+    text-align: center;
+  }
+  .user-info ul {
+    width: 300px;
+  }
+}
