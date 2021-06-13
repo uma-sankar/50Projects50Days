@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Typing Effect</title>
+    <link rel="stylesheet" href="style.css" />
+    <!-- using vanilla Javascript 
+    <script src="script.js" defer></script> -->
+
+    <!-- using typed.js library -->
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+  </head>
+  <body>
+    <h1 id="text">I'm a <span id="animate"></span></h1>
+    <!-- typedjs library config -->
+    <script>
+      var typed = new Typed("#animate", {
+        strings: ["web developer", "Photographer", "UI/UX Designer"],
+        typeSpeed: 200,
+        backDelay: 500,
+        smartBackspace: true,
+        loop: true,
+      });
+    </script>
+  </body>
+</html>
