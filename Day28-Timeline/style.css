@@ -1,0 +1,120 @@
+*{
+  box-sizing: border-box;
+}
+body{
+  margin: 0;
+  padding: 0;
+  display: flex;
+  min-height: 100vh;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  overflow-x: hidden;
+}
+.main{
+  width: 100%;
+  position: relative;
+  height: 100%;
+}
+.timeline-line{
+  margin: 20px 0px;
+  width: 10px;
+  min-height: 100vh;
+  height: 1250px;
+  background-color: #008c8c;
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+  border-radius: 5px;
+}
+.right, .left{
+  position: absolute;
+  background-color: turquoise;
+  border-radius: 10px;
+  color: black;
+  padding: 10px 20px;
+  width: 350px;
+  height: 150px;
+  margin: 10px 10px;
+}
+.right::before, .right::after{
+  content: "";
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background-color: #008c8c;
+  position: absolute;
+  top: 50%;
+  left: -84px;
+  transform: translateY(-50%);
+}
+.right::after{
+  width: 20px;
+  height: 20px;
+  background-color: turquoise;
+  left: -79px;
+}
+.left::before, .left::after{
+  content: "";
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background-color: #008c8c;
+  position: absolute;
+  top: 50%;
+  right: -86px;
+  transform: translateY(-50%);
+}
+.left::after{
+  width: 20px;
+  height: 20px;
+  background-color: turquoise;
+  right: -80px;
+}
+
+.right-1{
+  left: 54%;
+  top:5%;
+}
+.left-1{
+   right: 54%;
+   top: calc(5% + 200px)
+}
+.right-2{
+  left: 54%;
+  top: calc(5% + (400px))
+}
+.left-2{
+  right: 54%;
+  top: calc(5% + (600px))
+}
+.right-3{
+  left: 54%;
+  top: calc(5% + (800px))
+}
+.left-3{
+  right: 54%;
+  top: calc(5% + (1000px))
+}
+.right h2, .right p,.left h2, .left p{
+   margin: 10px;
+}
+.arrow{
+  width: 30px;
+  height: 30px;
+  border: 20px solid turquoise;
+  border-top-color: transparent;
+  border-bottom-color: transparent;
+  position: absolute;
+  top: 50%;
+}
+.arrow-right{
+  border-left-color: white;
+  transform: translateY(-50%) translateX(-150%)
+}
+.arrow-left{
+  border-right-color: white;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%) translateX(330px)
+}
