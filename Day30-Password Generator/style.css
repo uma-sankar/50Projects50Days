@@ -1,0 +1,129 @@
+@import url('https://fonts.googleapis.com/css2?family=Andika+New+Basic&display=swap');
+*{
+  box-sizing: border-box;
+}
+body{
+  margin: 0;
+  padding: 0;
+  font-family: 'Andika New Basic', sans-serif;
+  text-decoration: capitilize;
+  background-color: #474642;
+}
+
+.main-div{
+  display: flex;
+  flex-direction: column;
+  width: 500px;
+  height: auto;
+  border: 3px solid black;
+  padding: 10px;
+  margin: auto;
+  margin-top: 125px;
+  border-radius: 10px;
+  background: rgb(3,39,121);
+background: linear-gradient(225deg, rgba(3,39,121,1) 0%, rgba(98,76,176,1) 70%);
+
+
+}
+
+h1{
+  text-align: center;
+  color: white;
+}
+input[type="text"]{
+  width: auto;
+  height: 50px;
+  font-size: 40px;
+  outline: none;
+  border: 2px solid black;
+  border-radius: 5px;
+  background: none;
+  color: white;
+}
+.range-selector{
+  display: flex;
+  justify-content: space-between;
+  margin: 10px;
+}
+.range-selector h3{
+  margin: 5px;
+}
+input[type="number"]{
+  font-size: 15px;
+  width: 100px;
+  /* border: 3px solid #00BFF0;*/
+  border-radius: 5px; 
+  
+  outline: none;
+  border: 2px solid black;
+  background: none;
+  color: white;
+
+}
+.check{
+  display: inline-block;
+  
+}
+input[type=checkbox] {
+  transform: scale(0.8);
+}
+
+input[type=checkbox] {
+  width: 15px;
+  height: 15px;
+  /* margin: 8px; */
+  cursor: pointer;
+  font-size: 17px;
+  visibility: hidden;
+  
+}
+
+input[type=checkbox]:after {
+  content: " ";
+  background-color: #fff;
+  display: inline-block;
+  /* margin-left: 10px; */
+  padding-bottom: 5px;
+  color: #00BFF0;
+  width: 15px;
+  height: 15px;
+  visibility: visible;
+  border: 1px solid #00BFF0;
+  padding-left: 3px;
+  padding-right: 3px;
+  border-radius: 5px;
+  vertical-align: middle;
+  display: inline-block;
+}
+
+input[type=checkbox]:checked:after {
+  content: "\2714";
+  /* padding: -5px; */
+  font-weight: bold;
+}
+label{
+  margin-left: 7.5px;
+  font-size: 20px;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+button{
+   width: 200px;
+   height: 30px;
+   align-self: center;
+   margin-top: 10px;
+   border: 2px solid #00BFF0;
+   border-radius: 5px;
+   font-size: 15px;
+   font-weight: bold;
+   background-color: 	#00BFF0;
+   
+}
+button:hover{
+  color: white;
+  background-color: blue;
+}
+button:focus{
+  outline: none;
+}
